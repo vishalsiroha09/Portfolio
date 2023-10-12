@@ -1,0 +1,812 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:768px){
+
+    header{
+        /*border:2px solid red;*/
+    /*border-bottom: 2px solid rgb(205, 204, 204);*/
+    padding: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: "sans";
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    box-shadow: 0 0 20px 1px grey;
+    
+}
+nav ul{
+    display: flex;
+    /*border:2px solid blue;*/
+    
+    gap:2vw;
+    font-size: 20px;
+}
+nav ul li{
+    border: 3px solid transparent;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+nav ul li:hover{
+    border-bottom: 3px solid darkblue;
+}
+#home{
+    /* border:2px solid red; */
+    display: flex;
+    padding: 4vw;
+    justify-content: space-around;
+    
+}
+#home article{
+    /* border:2px solid yellow; */
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap:4vw;
+    align-items: center;
+    
+}
+
+#home h1{
+    font-size: 7vw;
+}
+#home h1 span{
+    color:darkblue;
+    /* font-size: 7vw; */
+}
+#home article button{
+    width: 40%;
+    padding: 0.5vw;
+    background-color: white;
+    border:3px solid darkblue;
+    border-radius: 20px;
+}
+#home article button a{
+    text-decoration: none;
+    font-size: 1.8vw;
+    color:darkblue;
+    
+}
+#home article button:hover{
+    background-color: darkblue;
+}
+#home article button:hover a{
+    color:white;
+    
+}
+#home .developer-image{
+    height: 25vw;
+    width:25vw;
+    background-image: linear-gradient(rgba(155, 76, 76, 0.368),rgba(159, 40, 40, 0.31)),url("/Images/vishal_photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:2px solid black;
+    border-radius: 50%;
+
+}
+#about{
+    /* border:2px solid yellow; */
+    padding: 2vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.811)),url("https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg");
+    background-repeat: no-repeat;
+    color:white;
+    
+}
+#about h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+    transition-property: border-bottom;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+#about h2:hover{
+    border-bottom: 4px solid white;
+}
+#about p{
+    width:60%;
+    font-size: 1.7vw;
+}
+#skills{
+    /* border:2px solid red; */
+    display: flex;
+    padding: 3vw;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap:4vw;
+    align-items: center;
+}
+
+#skills h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+    transition-property: border-bottom;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+#skills h2:hover{
+    border-bottom: 4px solid darkblue;
+}
+#skills article{
+    display: flex;
+    gap:2vw;
+    
+}
+#skills .html{
+    height: 18vw;
+    width:18vw;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn");
+}
+#skills .css{
+    height: 18vw;
+    width:18vw;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo");
+    
+}
+#skills .javascript{
+    height: 18vw;
+    width:18vw;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7aaQuZRXXi8JzS1OQJqUZt5ewmpKnLjO5JtjJ9s-EgFlqIbLzgNQjriH88CmMgd7-Jg&usqp=CAU");
+}
+
+#skills .react{
+    height: 18vw;
+    width:18vw;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK_400x400.png");
+}
+#projects{
+    /* border:2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    gap:5vw;
+    background-image: linear-gradient(#cdb4db,#ffc8dd);
+    
+    
+}
+#projects h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+    transition-property: border-bottom;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    align-self: center;
+}
+#projects h2:hover{
+    border-bottom: 4px solid skyblue;
+    
+}
+#projects article{
+    /* border:2px solid blue; */
+    display: flex;
+    gap:4vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#projects article .project-detail{
+    /* border:2px solid forestgreen; */
+    display:flex;
+    flex-direction: column;
+    gap:2vw;
+    height: 300px;
+    /* padding: 2vw; */
+    position: relative;
+    width:25vw;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("https://cdn.hackr.io/uploads/posts/large/15925654385a8PArotT5.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size:230%;
+    
+}
+.project-detail .project-name{
+    /* border:2px solid purple; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -170px;
+    width: 100%;
+    gap:4vw;
+    align-items: center;
+    padding: 1vw;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    background-color: rgba(0, 0, 0, 0.811);
+    color:white;
+}
+
+.project-name h3{
+    font-size: 3vw;
+    text-align: center;
+}
+.project-name button{
+    width: 50%;
+    padding: 0.5vw;
+    background-color: white;
+    border:3px solid darkblue;
+    border-radius: 20px;
+    
+}
+.project-name button a{
+    text-decoration: none;
+    font-size: 1.8vw;
+    color:darkblue;
+    
+}
+.project-name button:hover{
+    background-color: darkblue;
+}
+.project-name button:hover a{
+    color:white;
+    
+}
+
+.project-detail:hover .project-name{
+    bottom: 0;
+}
+
+#contact{
+    /* border:2px solid red; */
+    display: flex;
+    padding: 3vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.696);
+}
+#contact .contact-container{
+    /* border:2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    gap:6vw;
+    width: 40vw;
+    padding: 1.5vw;
+    background-image: linear-gradient(#a2d2ff,#bde0fe);
+    
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    /*border:2px solid blue;*/
+    
+    gap:1vw;
+    font-size: 20px;
+}
+.links ul li{
+    border: 3px solid transparent;
+}
+.links ul li a{
+    text-decoration: none;
+    color:blue;
+}
+/* .links ul li:hover{
+    border-bottom: 3px solid darkblue;
+} */
+
+.contact-container .user-contact{
+    /* border:2px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+}
+.user-contact h2,.user-contact address{
+    font-size: 1.7vw;
+    font-weight:bold;
+}
+
+/* .user-contact span{
+    font-size: 2.2vw;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    
+    
+} */
+
+#contact .contact-developer{
+    width: 50vw;
+    /* border:2px solid purple; */
+    padding: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3vw;
+    background-image: linear-gradient(skyblue,orange);
+}
+.contact-developer h2{
+    font-size: 3vw;
+}
+.contact-developer form{
+    display: flex;
+    flex-direction: column;
+    gap:3vw;
+    align-items: center;
+    width: 100%;
+}
+.contact-developer form input{
+    background-color: white;
+    border:2px solid black;
+    width:80%;
+    font-size: 1.7vw;
+    padding: 1vw;
+    outline: none;
+    border-radius: 10px;
+    
+}
+
+.contact-developer form select{
+    background-color: white;
+    border:2px solid black;
+    width:80%;
+    font-size: 1.7vw;
+    padding: 1vw;
+    outline: none;
+    border-radius: 10px;
+    color:grey;
+    
+}
+.contact-developer form button{
+    width: 40%;
+    padding: 0.5vw;
+    background-color: white;
+    border:3px solid darkblue;
+    border-radius: 20px;
+}
+.contact-developer form button a{
+    text-decoration: none;
+    font-size: 1.8vw;
+    color:darkblue;
+    
+}
+.contact-developer form button:hover{
+    background-color: darkblue;
+}
+.contact-developer form button:hover a{
+    color:white;
+    
+}
+
+}
+@media screen and (min-width:320px) and (max-width:468px){
+    header{
+        /*border:2px solid red;*/
+        /*border-bottom: 2px solid rgb(205, 204, 204);*/
+        padding: 3vw 1vw;
+        display: flex;
+        justify-content: space-between;
+        font-family: "sans";
+        font-size: 4vw;
+        font-weight: bold;
+        align-items: center;
+        box-shadow: 0 0 20px 1px grey;
+        
+    }
+    nav ul{
+        display: flex;
+        /*border:2px solid blue;*/
+        
+        gap:2vw;
+        font-size: 3.5vw;
+    }
+    nav ul li{
+        border: 3px solid transparent;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:black;
+    }
+    nav ul li:hover{
+        border-bottom: 3px solid darkblue;
+    }
+    #home{
+        /* border:2px solid red; */
+        display: flex;
+        padding: 4vw;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap:4vw;
+    
+    }
+    #home article{
+        /* border:2px solid yellow; */
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        gap:4vw;
+        align-items: center;
+        width:80vw;
+        order:3;
+    
+    }
+    
+    #home h1{
+        font-size: 9vw;
+        text-align: center;
+    }
+    #home h1 span{
+        color:darkblue;
+        /* font-size: 7vw; */
+    }
+    #home article button{
+        width: 40%;
+       padding: 2vw;
+       background-color: white;
+       border:3px solid darkblue;
+       border-radius: 20px;
+    }
+    #home article button a{
+        text-decoration: none;
+        /* font-size: 1.8vw; */
+        font-size: 4vw;
+        color:darkblue;
+    
+    }
+    #home article button:hover{
+        background-color: darkblue;
+    }
+    #home article button:hover a{
+        color:white;
+    
+    }
+    #home .developer-image{
+        height: 40vw;
+        width:40vw;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.268),rgba(0, 0, 0, 0.21)),url("data:image/jpeg;base64,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");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border:2px solid black;
+        border-radius: 50%;
+    
+    }
+    #about{
+        /* border:2px solid yellow; */
+        padding: 6vw 2vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10vw;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.811)),url("https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+    
+    }
+    #about h2{
+        font-size: 10vw;
+        text-transform: uppercase;
+        border-bottom: 4px solid transparent;
+        transition-property: border-bottom;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+    }
+    #about h2:hover{
+        border-bottom: 4px solid white;
+    }
+    #about p{
+        width:90%;
+        font-size: 5vw;
+    }
+    #skills{
+        /* border:2px solid red; */
+        display: flex;
+        padding: 6vw 3vw;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        gap:10vw;
+        align-items: center;
+    }
+    
+    #skills h2{
+        font-size: 10vw;
+        text-transform: uppercase;
+        border-bottom: 4px solid transparent;
+        transition-property: border-bottom;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+    }
+    #skills h2:hover{
+        border-bottom: 4px solid darkblue;
+    }
+    #skills article{
+        display: flex;
+        gap:15vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* border: 2px solid red; */
+    
+    }
+    #skills .html{
+        height: 40vw;
+        width:40vw;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn");
+    }
+    #skills .css{
+        height: 40vw;
+        width:40vw;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo");
+    
+    }
+    #skills .javascript{
+        height: 40vw;
+        width:40vw;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7aaQuZRXXi8JzS1OQJqUZt5ewmpKnLjO5JtjJ9s-EgFlqIbLzgNQjriH88CmMgd7-Jg&usqp=CAU");
+    }
+    
+    #skills .react{
+        height: 40vw;
+        width:40vw;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK_400x400.png");
+    }
+    #projects{
+        /* border:2px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        padding: 3vw;
+        gap:10vw;
+        /* justify-content: space-between; */
+        background-image: linear-gradient(#cdb4db,#ffc8dd);
+    
+    
+    }
+    #projects h2{
+        font-size: 10vw;
+        text-transform: uppercase;
+        border-bottom: 4px solid transparent;
+        transition-property: border-bottom;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        align-self: center;
+    }
+    #projects h2:hover{
+        border-bottom: 4px solid skyblue;
+    
+    }
+    #projects article{
+        /* border:2px solid blue; */
+        display: flex;
+        gap:4vw;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #projects article .project-detail{
+        /* border:2px solid forestgreen; */
+        display:flex;
+        flex-direction: column;
+        gap:2vw;
+        height: 300px;
+        padding: 2vw;
+        position: relative;
+        width:60vw;
+        align-items: center;
+        overflow: hidden !important;
+        background-image: url("https://cdn.hackr.io/uploads/posts/large/15925654385a8PArotT5.png");
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size:cover;
+    
+    }
+    .project-detail .project-name{
+        /* border:2px solid purple; */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+        gap:4vw;
+        align-items: center;
+        padding: 3vw 1vw;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+        background-color: rgba(0, 0, 0, 0.811);
+        color:white;
+    }
+    
+    .project-name h3{
+        font-size: 7vw;
+        text-align: center;
+    }
+    .project-name button{
+        width: 70%;
+        padding: 1vw;
+        background-color: white;
+        border:3px solid darkblue;
+        border-radius: 20px;
+    
+     }
+     .project-name button a{
+         text-decoration: none;
+         font-size: 4.3vw;
+         color:darkblue;
+     
+     }
+     .project-name button:hover{
+         background-color: darkblue;
+     }
+    .project-name button:hover a{
+         color:white;
+     
+    }
+    
+    .project-detail:hover .project-name{
+        bottom: 0px;
+    }
+    
+    #contact{
+        /* border:2px solid red; */
+        display: flex;
+        padding: 3vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.696);
+    }
+    #contact .contact-container{
+        /* border:2px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap:6vw;
+        width: 90vw;
+        padding: 2vw 10vw;
+        background-image: linear-gradient(#a2d2ff,#bde0fe);
+    
+    }
+    
+    
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        /*border:2px solid blue;*/
+    
+     gap:1vw;
+        font-size: 6vw;
+    }
+    .links ul li{
+        border: 3px solid transparent;
+    }
+    .links ul li a{
+        text-decoration: none;
+        color:blue;
+    }
+    /* .links ul li:hover{
+        border-bottom: 3px solid darkblue;
+        flex-direction: row;
+    } */
+    
+    .contact-container .user-contact{
+        /* border:2px solid green; */
+        display: flex;
+        flex-direction: column;
+        gap:1vw;
+        font-size: 5vw;
+    }
+    .user-contact h2,.user-contact address{
+        font-size: 5vw;
+        font-weight:bold;
+    }
+    
+    /* .user-contact span{
+        font-size: 2.2vw;
+        font-weight: bold;
+        font-family: 'Segoe UI';
+        font-style: normal;
+    
+    
+    } */
+    
+    #contact .contact-developer{
+        width: 90vw;
+        /* border:2px solid purple; */
+        padding: 1.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:3vw;
+        background-image: linear-gradient(skyblue,orange);
+        margin-top: 10vw;
+    }
+    .contact-developer h2{
+        font-size: 8vw;
+    }
+    .contact-developer form{
+        display: flex;
+        flex-direction: column;
+        gap:3vw;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-developer form input{
+        background-color: white;
+        border:2px solid black;
+        width:90%;
+        font-size: 4vw;
+        padding: 2.5vw;
+        outline: none;
+        border-radius: 10px;
+    
+    }
+    
+    .contact-developer form select{
+        background-color: white;
+        border:2px solid black;
+        width:90%;
+        font-size: 4vw;
+        padding: 2.5vw;
+        outline: none;
+        border-radius: 10px;
+        color:grey;
+    
+    }
+    .contact-developer form button{
+        width: 40%;
+       padding: 1.6vw;
+       background-color: white;
+       border:3px solid darkblue;
+       border-radius: 20px;
+    }
+    .contact-developer form button a{
+        text-decoration: none;
+        font-size: 6vw;
+        color:darkblue;
+    
+    }
+    .contact-developer form button:hover{
+        background-color: darkblue;
+    }
+    .contact-developer form button:hover a{
+        color:white;
+    
+    } 
+    
+}
+
+
+
+
+
+
+
+
+
+
